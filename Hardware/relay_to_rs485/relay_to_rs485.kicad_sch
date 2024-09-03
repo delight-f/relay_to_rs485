@@ -4464,6 +4464,12 @@
 		(uuid "20f7ad38-1041-4d72-9517-72b9a536759d")
 	)
 	(junction
+		(at 240.03 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bce38d9-1bb9-42a8-a932-00cf11b38f90")
+	)
+	(junction
 		(at 232.41 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4516,6 +4522,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61ef1f3c-7be0-4ee8-8f5f-5668677eb35e")
+	)
+	(junction
+		(at 185.42 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6528f839-aa30-4f18-a080-c901a3b1f952")
 	)
 	(junction
 		(at 218.44 81.28)
@@ -4632,16 +4644,16 @@
 		(uuid "ec73debe-1f32-4a04-b87c-0f0e51739b90")
 	)
 	(junction
+		(at 240.03 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec8fd484-3612-4d65-8f65-3880c958a081")
+	)
+	(junction
 		(at 232.41 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0b4ae58-84c9-4ffd-b332-2cda44da057c")
-	)
-	(junction
-		(at 185.42 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f14a3173-396a-4937-a370-9a68e69a8655")
 	)
 	(no_connect
 		(at 130.81 109.22)
@@ -4799,7 +4811,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 124.46) (xy 204.47 124.46)
+			(xy 161.29 124.46) (xy 185.42 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4946,6 +4958,16 @@
 			(type default)
 		)
 		(uuid "4bd0f65b-77b3-4197-9084-22f2c2f39e51")
+	)
+	(wire
+		(pts
+			(xy 185.42 124.46) (xy 204.47 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f27fa2a-4b1c-4a02-950b-60a00eb39679")
 	)
 	(wire
 		(pts
@@ -5139,6 +5161,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 26.67) (xy 247.65 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "953d2bd2-b991-4301-9f77-d1552d8a3c8c")
+	)
+	(wire
+		(pts
 			(xy 48.26 35.56) (xy 48.26 33.02)
 		)
 		(stroke
@@ -5159,6 +5191,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 29.21) (xy 240.03 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b67cdd4-923e-4bb2-b415-b50c480ba49d")
+	)
+	(wire
+		(pts
 			(xy 161.29 114.3) (xy 185.42 114.3)
 		)
 		(stroke
@@ -5166,6 +5208,16 @@
 			(type default)
 		)
 		(uuid "a194c43e-4ff5-43a3-b5fc-c669dfb3e7c3")
+	)
+	(wire
+		(pts
+			(xy 233.68 26.67) (xy 240.03 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21c5ef7-d4e8-4e77-a647-4420c4730ec4")
 	)
 	(wire
 		(pts
@@ -5229,23 +5281,23 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 109.22) (xy 167.64 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdf5e65f-c318-4034-bd61-dbe8845c6b1c")
-	)
-	(wire
-		(pts
-			(xy 208.28 109.22) (xy 185.42 109.22)
+			(xy 167.64 109.22) (xy 208.28 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c070ead7-06f3-4a2c-ac0c-248707afbf15")
+	)
+	(wire
+		(pts
+			(xy 240.03 29.21) (xy 247.65 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c12d503d-15b9-4183-905f-a638382533a9")
 	)
 	(wire
 		(pts
@@ -5450,7 +5502,7 @@
 		(uuid "18006e0c-3124-4813-ad9c-aed128ad82ba")
 	)
 	(label "TX"
-		(at 233.68 26.67 0)
+		(at 247.65 26.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5527,7 +5579,7 @@
 		(uuid "76841416-6a0b-45d7-8c13-dffe6fbf74bd")
 	)
 	(label "RX"
-		(at 233.68 29.21 0)
+		(at 247.65 29.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5951,6 +6003,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 185.42 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c56f24f-23d3-4bcb-b9b9-8b54a455c75c")
+		(property "Reference" "TP11"
+			(at 189.23 121.6024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 189.23 124.1424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 190.5 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 185.42 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb93abfd-ed74-4b99-b6c6-3ce57b73daef")
+		)
+		(instances
+			(project "relay_to_rs485"
+				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 142.24 77.47 270)
 		(unit 1)
@@ -6217,6 +6336,73 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Probe")
+		(at 240.03 29.21 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bfe60d2-2763-4822-b4b9-45f55c79f7fa")
+		(property "Reference" "TP17"
+			(at 241.3 30.1624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "~"
+			(at 241.3 32.0675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 234.95 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 240.03 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc490ee2-11f7-4525-b0bf-a2c27b48103c")
+		)
+		(instances
+			(project "relay_to_rs485"
+				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
+					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
 		(at 185.42 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6356,7 +6542,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3adea403-d4f6-4c34-b28b-9f9d8091ff6e")
-		(property "Reference" "TP2"
+		(property "Reference" "TP2_B1"
 			(at 45.72 78.4224 0)
 			(effects
 				(font
@@ -6407,7 +6593,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP2")
+					(reference "TP2_B1")
 					(unit 1)
 				)
 			)
@@ -6899,7 +7085,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "45e3ef7a-bbb6-490a-b66c-6b634841b9e6")
-		(property "Reference" "TP3"
+		(property "Reference" "TP3_C1"
 			(at 45.72 80.9624 0)
 			(effects
 				(font
@@ -6950,7 +7136,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP3")
+					(reference "TP3_C1")
 					(unit 1)
 				)
 			)
@@ -7096,7 +7282,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a8d149f-204a-4e4a-8357-745c8a7d04f8")
-		(property "Reference" "TP5"
+		(property "Reference" "TP5_E1"
 			(at 45.72 86.0424 0)
 			(effects
 				(font
@@ -7147,7 +7333,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP5")
+					(reference "TP5_E1")
 					(unit 1)
 				)
 			)
@@ -7602,7 +7788,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5db80b14-c78a-4efb-8f21-584623555a56")
-		(property "Reference" "TP4"
+		(property "Reference" "TP4_D1"
 			(at 45.72 83.5024 0)
 			(effects
 				(font
@@ -7653,7 +7839,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP4")
+					(reference "TP4_D1")
 					(unit 1)
 				)
 			)
@@ -7725,6 +7911,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 240.03 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61ff6d2a-943a-4918-b029-b9b6816a1076")
+		(property "Reference" "TP16"
+			(at 238.4425 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 239.7124 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 240.03 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point (alternative probe-style design)"
+			(at 240.03 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3377b334-9590-4cd6-9a66-03a398708298")
+		)
+		(instances
+			(project "relay_to_rs485"
+				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
 		(at 261.62 106.68 0)
 		(unit 1)
@@ -7743,7 +7995,7 @@
 			)
 		)
 		(property "Value" "RS485 Output Screw Terminal"
-			(at 264.16 107.9499 0)
+			(at 268.732 119.126 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7860,73 +8112,6 @@
 			(project ""
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Probe")
-		(at 185.42 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63d9e2d9-bedd-47da-b5ae-fa7258e415ed")
-		(property "Reference" "TP11"
-			(at 189.23 106.3624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 189.23 108.9024 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point (alternative probe-style design)"
-			(at 185.42 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "868dcadb-44d3-41e2-a3be-b92abab36e46")
-		)
-		(instances
-			(project "relay_to_rs485"
-				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -8533,7 +8718,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95c57a34-e5f9-46b1-9f63-d8817db6ee42")
-		(property "Reference" "TP8"
+		(property "Reference" "TP8_H1"
 			(at 45.72 93.6624 0)
 			(effects
 				(font
@@ -8584,7 +8769,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP8")
+					(reference "TP8_H1")
 					(unit 1)
 				)
 			)
@@ -8599,7 +8784,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d576a94-1f9e-4693-909a-44f07ce2f0b2")
-		(property "Reference" "TP7"
+		(property "Reference" "TP7_G1"
 			(at 45.72 91.1224 0)
 			(effects
 				(font
@@ -8650,7 +8835,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP7")
+					(reference "TP7_G1")
 					(unit 1)
 				)
 			)
@@ -9061,7 +9246,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c11c177b-46b6-4491-bf20-6bf927e88206")
-		(property "Reference" "TP6"
+		(property "Reference" "TP6_F1"
 			(at 45.72 88.5824 0)
 			(effects
 				(font
@@ -9112,7 +9297,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP6")
+					(reference "TP6_F1")
 					(unit 1)
 				)
 			)
@@ -9401,7 +9586,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce634bca-cf20-4906-9919-647a71bf73ed")
-		(property "Reference" "TP1"
+		(property "Reference" "TP1_A1"
 			(at 45.72 75.8824 0)
 			(effects
 				(font
@@ -9452,7 +9637,7 @@
 		(instances
 			(project ""
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP1")
+					(reference "TP1_A1")
 					(unit 1)
 				)
 			)
