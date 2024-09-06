@@ -34,17 +34,14 @@ void setup()
 }   // end input pin pull-up resistor routine
 
 } // end initial setup
- void loop()  
-     {
-      for (int i = 0; i < 5; i++) 
-      {
-        if (digitalRead(inputPins[i]) == HIGH) {
-          mb.writeCoil(0xFF, coilAddresses[i], true);
-        } else {
-          mb.writeCoil(0xFF, coilAddresses[i], false);
-        }
-      }
-      delay(50); // Small delay to avoid excessive polling
-      mb.task();
-      yield;
+ void loop() {
+  for (int i = 0; i < 5; i++) {
+    if (digitalRead(inputPins[i]) == HIGH) {
+      mb.writeCoil(0xFF, coilAddresses[i], true);
+    } else {
+      mb.writeCoil(0xFF, coilAddresses[i], false);
     }
+    mb.task(); // Call mb.task() after each write operation
+  }
+  yield;
+}
