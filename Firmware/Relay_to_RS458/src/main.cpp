@@ -4,8 +4,8 @@
 
 /* Modbus stuff */
 #define MODBUS_DIR_PIN  20 // connect DR, RE pin of MAX485 to gpio 20
-#define MODBUS_RX_PIN 9// Rx pin  
-#define MODBUS_TX_PIN 10 // Tx pin 
+#define MODBUS_RX_PIN 16// Rx pin  
+#define MODBUS_TX_PIN 17 // Tx pin 
 #define MODBUS_SERIAL_BAUD 9600 // Baud rate for esp32 and max485 communication
 
 //Initialize the ModbusMaster object as node
@@ -30,12 +30,10 @@ const int inputPins[5] = {2, 3, 4, 5, 6};
 // Define the MODBUS coil addresses for the relays
 const int coilAddresses[5] = {0x0000, 0x0001, 0x0002, 0x0003, 0x0004};
 
-bool outputCoilStates[5] = {false, false, false, false, false};
-
 void setup() 
   {
     // Initialize serial communication
-    Serial.begin(192500);
+    Serial.begin(115200);
 
     pinMode(MODBUS_DIR_PIN, OUTPUT);
     digitalWrite(MODBUS_DIR_PIN, LOW);
@@ -47,10 +45,10 @@ void setup()
     node.begin(255, Serial0);
     
     // Set input pins as input with internal pull-up resistors
-    for (int i = 2; i <= 6; i++) {
-      pinMode(inputPins[i], INPUT_PULLUP);
+    for (int pin : inputPins) {
+    pinMode(pin, INPUT_PULLUP);
 
-    }   // end input pin pull-up resistor
+}   // end input pin pull-up resistor routine
 
 // create glitch filters
 
@@ -65,22 +63,16 @@ for (int i = 2; i <= 6; i++) {
 //  callbacks allow us to configure the RS485 transceiver correctly  
     node.preTransmission(modbusPreTransmission);
     node.postTransmission(modbusPostTransmission);
+    
 } // end initial setup
-void loop() 
+ void loop() 
 {
-  // Read the state of all input pins at once
-  bool inputStates[5];
   for (int i = 0; i < 5; i++) {
-    inputStates[i] = digitalRead(inputPins[i]) == LOW;
-  }
-
-  // Send MODBUS commands only when the state changes
-  for (int i = 0; i < 5; i++) {
-    if (inputStates[i] != outputCoilStates[i]) {
-      node.writeSingleCoil(coilAddresses[i], inputStates[i] ? 0xFF : 0x00);
-      outputCoilStates[i] = inputStates[i];
+    if (digitalRead(inputPins[i]) == HIGH) {
+      node.writeSingleCoil(coilAddresses[i], 0xFF);
+    } else {
+      node.writeSingleCoil(coilAddresses[i], 0x00);
     }
   }
-
   delay(100); // Small delay to avoid excessive polling
 }

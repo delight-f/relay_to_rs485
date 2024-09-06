@@ -1434,6 +1434,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -4584,6 +4705,12 @@
 		(uuid "ad8d3431-8ab0-4703-bdbd-a346355b4d43")
 	)
 	(junction
+		(at 218.44 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b284bee5-2bbd-47c9-81d0-b6895c12f2c8")
+	)
+	(junction
 		(at 146.05 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4791,6 +4918,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 90.17) (xy 218.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09fa056e-accf-41e7-a5e5-5dcbf6f2da21")
+	)
+	(wire
+		(pts
 			(xy 39.37 88.9) (xy 41.91 88.9)
 		)
 		(stroke
@@ -4848,6 +4985,16 @@
 			(type default)
 		)
 		(uuid "2510deed-19cb-4f9b-ac4f-40b80722f7cb")
+	)
+	(wire
+		(pts
+			(xy 232.41 93.98) (xy 232.41 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26209408-1252-43a3-a11a-9e030bc86054")
 	)
 	(wire
 		(pts
@@ -4948,6 +5095,16 @@
 			(type default)
 		)
 		(uuid "3d057204-3548-4d2b-b624-bde4229ad550")
+	)
+	(wire
+		(pts
+			(xy 232.41 114.3) (xy 232.41 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49cfc3c2-00a6-4e0e-89dd-2a99c30ca1c7")
 	)
 	(wire
 		(pts
@@ -5138,6 +5295,16 @@
 			(type default)
 		)
 		(uuid "86423e32-613c-4483-bbfc-4ea945123e1a")
+	)
+	(wire
+		(pts
+			(xy 232.41 90.17) (xy 218.44 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a7b5e0-f866-4168-93f0-0536431e2ecb")
 	)
 	(wire
 		(pts
@@ -5391,7 +5558,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 86.36) (xy 218.44 93.98)
+			(xy 218.44 86.36) (xy 218.44 90.17)
 		)
 		(stroke
 			(width 0)
@@ -6329,6 +6496,76 @@
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 232.41 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17e66a2c-a170-4f04-830b-ea1087a319c8")
+		(property "Reference" "R4"
+			(at 234.95 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "680R"
+			(at 234.95 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 230.632 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 232.41 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2910ba55-024b-4538-be22-022af511dfd9")
+		)
+		(pin "2"
+			(uuid "d3411079-d3f3-4a90-ae5a-63d42bbc6e4d")
+		)
+		(instances
+			(project ""
+				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -8514,6 +8751,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 232.41 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "855ab9fb-d0b5-4f83-8446-434d17100df0")
+		(property "Reference" "#PWR028"
+			(at 232.41 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "689f44b9-0adb-430a-8997-a24b77eedf39")
+		)
+		(instances
+			(project "relay_to_rs485"
+				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 120.65 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10112,6 +10415,76 @@
 			(project ""
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 232.41 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc2a4492-9ec2-4505-b90e-a17468e5fae6")
+		(property "Reference" "R5"
+			(at 234.95 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "680R"
+			(at 234.95 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 230.632 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf82d783-aa0a-4e13-8d91-a67b8a364a0e")
+		)
+		(pin "2"
+			(uuid "9b528e31-4beb-442f-ac18-baeb2182d4ef")
+		)
+		(instances
+			(project "relay_to_rs485"
+				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
+					(reference "R5")
 					(unit 1)
 				)
 			)
