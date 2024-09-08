@@ -1,6 +1,5 @@
 #include <ModbusMaster.h>
 #include <driver/gpio_filter.h>
-#include <driver/gpio.h>
 
 // initialise ModbusRTU
 
