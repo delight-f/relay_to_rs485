@@ -22,7 +22,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **de_light** - *Initial work* - [de_light](https://github.com/de_light)
+* **de_light** - *Initial work* - [de_light]([https://github.com/de_light](https://github.com/delight-f))
 
 ## License
 
