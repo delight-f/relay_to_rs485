@@ -8962,7 +8962,7 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "1uF"
 			(at 214.122 77.724 90)
 			(effects
 				(font
@@ -9360,7 +9360,7 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "1uF"
 			(at 141.732 68.834 90)
 			(effects
 				(font
@@ -9764,7 +9764,7 @@
 			)
 		)
 		(property "Value" "Jack-DC"
-			(at 19.05 29.2101 0)
+			(at 19.05 35.306 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10572,7 +10572,7 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "1uF"
 			(at 61.214 43.434 90)
 			(effects
 				(font

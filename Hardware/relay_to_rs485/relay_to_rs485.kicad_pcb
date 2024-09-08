@@ -846,7 +846,7 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "1uF"
 			(at -3 0.5 180)
 			(layer "F.SilkS")
 			(uuid "cc1f1615-e18d-44c4-8bbc-88d6ee5d1d75")
@@ -1513,8 +1513,8 @@
 		(at 148.25 105.75 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
-		(property "Reference" "R1"
-			(at -0.295 -1.8444 90)
+		(property "Reference" "R1_TERM."
+			(at -0.75 -1.8444 90)
 			(layer "F.SilkS")
 			(uuid "4fc312a5-f450-4564-aff4-8753e43bd9d8")
 			(effects
@@ -3844,7 +3844,7 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "1uF"
 			(at 4.5 0 0)
 			(layer "F.SilkS")
 			(uuid "ee9f4f7b-0fed-43bc-810e-aa4e882b000b")
@@ -10498,8 +10498,8 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
-			(at -0.0125 -2.1 -90)
+		(property "Value" "1uF"
+			(at -0.0125 -2.1 270)
 			(layer "F.SilkS")
 			(uuid "095e9582-4448-4b16-a2f9-4d15c1282ce9")
 			(effects
@@ -13528,7 +13528,7 @@
 			)
 		)
 	)
-	(gr_text "09/24 REV A"
+	(gr_text "09/24 REV B"
 		(at 148.75 116.5 0)
 		(layer "F.SilkS")
 		(uuid "67c6a4a0-c886-4269-8aef-3570fd94230e")
