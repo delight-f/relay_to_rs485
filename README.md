@@ -18,11 +18,11 @@ This build uses five ESP32 input pins in the code but the board has eight input 
   
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **de_light** - *Initial work* - [PurpleBooth](https://github.com/de_light)
+* **de_light** - *Initial work* - [de_light](https://github.com/de_light)
 
 ## License
 
