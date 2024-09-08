@@ -1,4 +1,4 @@
-# Project Title
+# Relay to RS485
 
 Mirror a relay state with RS485 and the ModBus protocol.
 
