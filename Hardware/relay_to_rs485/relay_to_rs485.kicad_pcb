@@ -10499,7 +10499,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at -0.0125 -2.1 270)
+			(at -0.0125 -2.1 -90)
 			(layer "F.SilkS")
 			(uuid "095e9582-4448-4b16-a2f9-4d15c1282ce9")
 			(effects
@@ -13322,18 +13322,8 @@
 		)
 	)
 	(gr_line
-		(start 95.5 91)
-		(end 97.35 91)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "0e25b2fa-b71d-456a-be45-542d8d2bfe00")
-	)
-	(gr_line
-		(start 104 84.5)
-		(end 105 84.5)
+		(start 104 84.2)
+		(end 105 84.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -13342,14 +13332,14 @@
 		(uuid "1fef40a3-3795-4cbe-8e92-73b606e3c6f1")
 	)
 	(gr_line
-		(start 96.425 90)
-		(end 96.425 91.925)
+		(start 104 92)
+		(end 105 92)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "4bb3d1fb-7ea8-449f-af99-5ab48ef552eb")
+		(uuid "762d5725-b493-4948-ac28-88a1e7ba55f6")
 	)
 	(gr_rect
 		(start 162.75 70.25)
@@ -13363,24 +13353,14 @@
 		(uuid "800490c9-4eee-4929-8f42-16e697cf4fc7")
 	)
 	(gr_line
-		(start 104.5 84.2)
-		(end 104.5 84.8)
+		(start 104.5 83.9)
+		(end 104.5 84.5)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
 		(uuid "bc4123fe-8df2-4e4a-97b7-fec64ee53f64")
-	)
-	(gr_line
-		(start 96.425 85.925)
-		(end 96.425 84.075)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "f81cd7d4-1568-4a42-9baf-98970df8da24")
 	)
 	(gr_line
 		(start 94.25 61.25)

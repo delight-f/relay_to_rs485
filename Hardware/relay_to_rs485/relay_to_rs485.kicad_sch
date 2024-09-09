@@ -4,6 +4,10 @@
 	(generator_version "8.0")
 	(uuid "3a402a89-4541-4a12-afbc-bb2d79b5f06e")
 	(paper "A4")
+	(title_block
+		(title "Relay to RS485 Module")
+		(date "2024-09-09")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
@@ -4669,6 +4673,12 @@
 		(uuid "87fd8383-d610-4fc4-89a7-a928254d7058")
 	)
 	(junction
+		(at 238.76 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89266747-9e07-4488-b3fd-a8b385d0f013")
+	)
+	(junction
 		(at 218.44 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4757,6 +4767,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d395cc1a-846c-43df-a87f-d075c1c5ed7c")
+	)
+	(junction
+		(at 238.76 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7297de1-0098-433e-917f-4f72f1797dfe")
 	)
 	(junction
 		(at 251.46 101.6)
@@ -5078,7 +5094,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 101.6) (xy 245.11 101.6)
+			(xy 232.41 101.6) (xy 238.76 101.6)
 		)
 		(stroke
 			(width 0)
@@ -5158,7 +5174,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 106.68) (xy 250.19 106.68)
+			(xy 232.41 106.68) (xy 238.76 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5498,6 +5514,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 106.68) (xy 250.19 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea2edfe-5ea0-4619-82fe-2a6d0a0ee395")
+	)
+	(wire
+		(pts
 			(xy 53.34 35.56) (xy 48.26 35.56)
 		)
 		(stroke
@@ -5545,6 +5571,16 @@
 			(type default)
 		)
 		(uuid "d5ca311a-e3f7-4bc1-9d57-61f9849f900c")
+	)
+	(wire
+		(pts
+			(xy 238.76 101.6) (xy 245.11 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d654151f-9588-4801-93d2-2e78d10db241")
 	)
 	(wire
 		(pts
@@ -6101,7 +6137,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 232.41 104.14 0)
+		(at 238.76 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6110,7 +6146,7 @@
 		(fields_autoplaced yes)
 		(uuid "0377ecb6-dafe-47d4-b817-a61b01241f50")
 		(property "Reference" "R1"
-			(at 234.95 102.8699 0)
+			(at 241.3 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6119,7 +6155,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 234.95 105.4099 0)
+			(at 241.3 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6128,7 +6164,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 232.41 104.14 0)
+			(at 238.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6137,7 +6173,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 104.14 0)
+			(at 238.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6146,7 +6182,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 232.41 104.14 0)
+			(at 238.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
