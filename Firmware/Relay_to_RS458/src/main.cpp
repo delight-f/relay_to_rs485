@@ -1,7 +1,7 @@
 #include <ModbusMaster.h>
 #include <driver/gpio_filter.h>
 
-// initialise ModbusRTU
+// initialise Modbus
 
 ModbusMaster node;
 
