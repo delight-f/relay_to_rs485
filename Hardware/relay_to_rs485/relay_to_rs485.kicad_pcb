@@ -1653,7 +1653,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R6"
-			(at -0.2 1.7 270)
+			(at -0.2 1.7 -90)
 			(layer "F.SilkS")
 			(uuid "887cd901-374a-49e5-b5a5-8dda2059c992")
 			(effects
@@ -3601,7 +3601,7 @@
 		(descr "SOT-23, Standard, Alternate KiCad Library")
 		(tags "SOT-23")
 		(property "Reference" "D1"
-			(at 0 2.85 360)
+			(at 0 2.85 0)
 			(layer "F.SilkS")
 			(uuid "4e14c2c2-2400-4171-8b81-3bdc1179b9fc")
 			(effects
@@ -3613,7 +3613,7 @@
 			)
 		)
 		(property "Value" "SM712 TVS"
-			(at 0 2.5 360)
+			(at 0 2.5 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e8fae06f-d799-4627-a12a-bde9efc6bab7")
@@ -3625,7 +3625,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-23"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7263e7a5-9572-4ccc-b59f-3f3b5a1a015b")
@@ -3637,7 +3637,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/75933fc1842e5f5f3391c0542bf992c7/SM712.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7fc4c97c-86c9-4d5d-ab3a-01384172cabd")
@@ -3649,7 +3649,7 @@
 			)
 		)
 		(property "Description" "SOT-23 Dual bidirectional TVS diode, 12V/7V, 600W, Alternate KiCAD Library"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2d7dfbbb-74f3-456e-8218-c3e3e63674af")
@@ -4050,7 +4050,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C1"
-			(at 2.8 -0.1 360)
+			(at 2.8 -0.1 0)
 			(layer "F.SilkS")
 			(uuid "e561f496-c54a-427b-b44d-237a90036f0e")
 			(effects
@@ -4062,7 +4062,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at -3 0.5 360)
+			(at -3 0.5 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d1d14f7d-6edf-4010-ba10-ea43fa1222f9")
@@ -4806,7 +4806,7 @@
 			(uuid "f6ec5e75-55ec-4c92-91ac-60646ab98026")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1c65dd36-3394-4f1e-83b1-f4fd22937858")
 			(effects
@@ -5500,7 +5500,7 @@
 			)
 		)
 		(property "Value" "680R"
-			(at 0 1.65 360)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "94b9da09-81d8-456b-8d63-4564469e07f0")
@@ -6824,7 +6824,7 @@
 			)
 		)
 		(property "Value" "2.2nH"
-			(at 3 2 360)
+			(at 3 2 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "da232709-9b24-42b3-a6c1-9af1336a1cf1")
@@ -8517,7 +8517,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R5"
-			(at 3 0 360)
+			(at 3 0 0)
 			(layer "F.SilkS")
 			(uuid "2b392d5b-fdf4-4a5a-b79f-1ec561b78036")
 			(effects
@@ -8529,7 +8529,7 @@
 			)
 		)
 		(property "Value" "680R"
-			(at 0 1.65 360)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9f96416a-061c-427e-835b-05db0bd1a2a8")
@@ -8685,7 +8685,7 @@
 			(uuid "ef3fcdc9-b997-44a3-ac51-1c569d41af38")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "bdd97397-8503-44f3-a717-efdb636ef860")
 			(effects
@@ -14646,7 +14646,7 @@
 		(uuid "0b921d0f-8a84-4335-87c3-f2bd424d5e98")
 	)
 	(via
-		(at 114.85 87.701)
+		(at 115.4 87.701)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -14682,6 +14682,25 @@
 		)
 		(net 1)
 		(uuid "4e35cd4d-71b7-460f-aeaa-c7fe0d1f8576")
+	)
+	(via
+		(at 114.4 87.8)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curve_points 0)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(net 1)
+		(uuid "547e179a-7ebc-4806-b077-198d74f5f43f")
 	)
 	(via
 		(at 102.5 83)
@@ -14936,6 +14955,14 @@
 		(uuid "0b0bb233-e528-4208-8261-2e201c063085")
 	)
 	(segment
+		(start 121.15 90)
+		(end 116 84.85)
+		(width 0.508)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "13dc68ba-c84b-40c5-b0af-de2c1458c292")
+	)
+	(segment
 		(start 131.944 79.556)
 		(end 129.77 81.73)
 		(width 0.508)
@@ -15006,6 +15033,14 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "3f99b15b-e09d-428c-be74-843a97533096")
+	)
+	(segment
+		(start 116 84.85)
+		(end 116 83.5)
+		(width 0.508)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "48ed1bb3-386b-4c06-b687-b2b5952f972c")
 	)
 	(segment
 		(start 121 82)
@@ -18180,6 +18215,44 @@
 		)
 	)
 	(zone
+		(net 2)
+		(net_name "+3V3")
+		(layer "F.Cu")
+		(uuid "63b88212-1d18-4060-a99b-df40222996ee")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 119.622499 88.113289) (xy 119.263289 88.472499) (xy 120.15 90.414214) (xy 121.150707 90.000707)
+				(xy 120.65 88.1)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 119.622499 88.113289) (xy 119.263289 88.472499) (xy 120.15 90.414214) (xy 121.150707 90.000707)
+				(xy 120.65 88.1)
+			)
+		)
+	)
+	(zone
 		(net 8)
 		(net_name "/InputB")
 		(layer "F.Cu")
@@ -19211,6 +19284,44 @@
 				(xy 121.192344 108.87791) (xy 121.19158 108.877594) (xy 120.960196 108.781855) (xy 120.283487 108.501856)
 				(xy 120.277152 108.495527) (xy 120.277146 108.495512) (xy 119.902453 107.588553) (xy 119.902462 107.579599)
 				(xy 119.9088 107.573272) (xy 119.910337 107.572758) (xy 121.726899 107.103775)
+			)
+		)
+	)
+	(zone
+		(net 2)
+		(net_name "+3V3")
+		(layer "F.Cu")
+		(uuid "af5e0e91-6d1a-43e7-b60d-a3dc5f923945")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30001)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 115.926461 85.135671) (xy 116.285671 84.776461) (xy 116.75 84.25) (xy 115.999293 83.499293)
+				(xy 115.302303 84.25)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 115.926461 85.135671) (xy 116.285671 84.776461) (xy 116.75 84.25) (xy 115.999293 83.499293)
+				(xy 115.302303 84.25)
 			)
 		)
 	)

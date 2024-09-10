@@ -58,12 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "unconnected_items|109725421|86895141|90f0aea4-0421-45df-a30e-3c4374b3b28a|b3e02b13-01b1-4900-b20f-33e268feaaeb",
-        "unconnected_items|114850000|90000000|6281a94f-6558-47f2-8265-427a6ba83970|617e7904-96fa-4634-a5f0-75f5b01a062d",
-        "unconnected_items|121150000|90000000|eb548523-15b7-4d93-91f2-6833477a9e2b|a9695222-bfbb-4676-bdf0-0df23df3418d",
-        "unconnected_items|125650000|82000000|a9695222-bfbb-4676-bdf0-0df23df3418d|00065c71-1513-43d3-8dd9-8b14defbdc65"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
