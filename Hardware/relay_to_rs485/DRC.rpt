@@ -1,0 +1,39 @@
+** Drc report for relay_to_rs485.kicad_pcb **
+** Created on 2024-09-10T11:51:25+1000 **
+
+** Found 10 DRC violations **
+[lib_footprint_mismatch]: Footprint 'ESP32-S3-WROOM-1' does not match copy in library 'RF_Module'.
+    Local override; warning
+    @(137.2500 mm, 85.7200 mm): Footprint U1
+[unresolved_variable]: Unresolved text variable
+    Local override; error
+    @(121.0000 mm, 83.5375 mm): PCB Text '${REFERENCE}' on F.Fab
+[unresolved_variable]: Unresolved text variable
+    Local override; error
+    @(92.5000 mm, 76.0000 mm): PCB Text '${REFERENCE}' on F.Fab
+[unresolved_variable]: Unresolved text variable
+    Local override; error
+    @(163.4500 mm, 112.5000 mm): PCB Text '${REFERENCE}' on F.Fab
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.1530 mm; actual 0.1500 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(175.7500 mm, 66.0000 mm): Reference ''
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.1530 mm; actual 0.1500 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(94.5000 mm, 112.7500 mm): Reference ''
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.1530 mm; actual 0.1500 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(175.7500 mm, 113.0000 mm): Reference ''
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.1530 mm; actual 0.0800 mm)
+    Rule: board setup constraints silk text thickness; warning
+    @(112.0000 mm, 83.0000 mm): Footprint Text '${REFERENCE}' of R3
+[text_height]: Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(112.0000 mm, 83.0000 mm): Footprint Text '${REFERENCE}' of R3
+[text_thickness]: Text thickness out of range (board setup constraints silk text thickness min thickness 0.1530 mm; actual 0.1500 mm)
+    Rule: board setup constraints silk text thickness; warning
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
