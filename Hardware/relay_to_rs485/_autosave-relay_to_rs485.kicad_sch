@@ -3039,6 +3039,251 @@
 				)
 			)
 		)
+		(symbol "PCM_Diode_Zener_AKL:D_Zener_Generic"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "DZ"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener_Generic"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode, generic symbol, Alternate KiCAD Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode zener generic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_Generic_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "D_Zener_Generic_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy -0.381 1.397)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 1.778 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 -0.889) (xy -1.778 0) (xy 0.889 0.889) (xy 0 -1.778) (xy -0.889 -0.889)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "D_Zener_Generic_1_1"
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "D_Zener_Generic_1_2"
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 0)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 0)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "PCM_Transistor_MOSFET_AKL:IRLML6401"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -4812,6 +5057,12 @@
 		(uuid "66eb654f-31a6-4e90-b21a-5c279ecf794f")
 	)
 	(junction
+		(at 34.29 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6aed94d4-7557-4dfd-95d6-51aa85f4899e")
+	)
+	(junction
 		(at 46.99 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4860,6 +5111,12 @@
 		(uuid "a4955363-172b-4868-8f87-ad8c0af09b55")
 	)
 	(junction
+		(at 41.91 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5a1f6f0-90aa-48e6-bb71-bc29a2f58dcb")
+	)
+	(junction
 		(at 41.91 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4870,12 +5127,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad8d3431-8ab0-4703-bdbd-a346355b4d43")
-	)
-	(junction
-		(at 34.29 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae7eea12-d305-435d-88b8-2e0de96ba74f")
 	)
 	(junction
 		(at 218.44 90.17)
@@ -4894,6 +5145,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b88bd97a-1ea9-4e2d-91d4-9bd36d152fcc")
+	)
+	(junction
+		(at 41.91 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b92254e3-3b5a-474b-9e0a-ba496cfaed4e")
 	)
 	(junction
 		(at 146.05 54.61)
@@ -5071,16 +5328,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 33.02) (xy 48.26 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0120b7ee-98d0-4142-b4f5-183a444d770c")
-	)
-	(wire
-		(pts
 			(xy 80.01 27.94) (xy 81.28 27.94)
 		)
 		(stroke
@@ -5241,7 +5488,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 33.02) (xy 34.29 35.56)
+			(xy 34.29 29.21) (xy 34.29 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5321,16 +5568,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 27.94) (xy 46.99 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f8fbdd9-6700-4f32-97d1-1b709b045d01")
-	)
-	(wire
-		(pts
 			(xy 41.91 96.52) (xy 62.23 96.52)
 		)
 		(stroke
@@ -5338,16 +5575,6 @@
 			(type default)
 		)
 		(uuid "50c8aea8-dffc-4b59-8984-03a961334d6c")
-	)
-	(wire
-		(pts
-			(xy 34.29 29.21) (xy 34.29 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53d06a31-1846-447f-85e4-30630bce364a")
 	)
 	(wire
 		(pts
@@ -5428,6 +5655,16 @@
 			(type default)
 		)
 		(uuid "659eeb4e-23e6-4887-b1e0-6eeed2c2ea69")
+	)
+	(wire
+		(pts
+			(xy 40.64 27.94) (xy 41.91 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec15d21-5115-4715-a5b4-63b0afa0baa0")
 	)
 	(wire
 		(pts
@@ -5561,16 +5798,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 35.56) (xy 48.26 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96b6ad52-0513-48ae-8379-205697dfb401")
-	)
-	(wire
-		(pts
 			(xy 233.68 29.21) (xy 240.03 29.21)
 		)
 		(stroke
@@ -5578,6 +5805,16 @@
 			(type default)
 		)
 		(uuid "9b67cdd4-923e-4bb2-b415-b50c480ba49d")
+	)
+	(wire
+		(pts
+			(xy 34.29 35.56) (xy 41.91 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cffc2ff-b381-4ec0-b05e-ccc2d0a745fe")
 	)
 	(wire
 		(pts
@@ -5751,16 +5988,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 35.56) (xy 48.26 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfcd9182-5587-48b7-ad07-edd99add2e74")
-	)
-	(wire
-		(pts
 			(xy 250.19 106.68) (xy 252.73 106.68)
 		)
 		(stroke
@@ -5838,6 +6065,26 @@
 			(type default)
 		)
 		(uuid "d654151f-9588-4801-93d2-2e78d10db241")
+	)
+	(wire
+		(pts
+			(xy 41.91 27.94) (xy 46.99 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d73b1369-b6bc-4781-ae80-b7ac4a24657a")
+	)
+	(wire
+		(pts
+			(xy 41.91 35.56) (xy 53.34 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d80af5a4-3f88-42c0-b1cd-bfe517951f43")
 	)
 	(wire
 		(pts
@@ -6964,7 +7211,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bfe60d2-2763-4822-b4b9-45f55c79f7fa")
-		(property "Reference" "TP17"
+		(property "Reference" "TP17_RX1"
 			(at 241.3 30.1624 0)
 			(effects
 				(font
@@ -7015,7 +7262,77 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP17")
+					(reference "TP17_RX1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_Zener_AKL:D_Zener_Generic")
+		(at 41.91 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f58840b-21b2-4350-a184-460292edaf92")
+		(property "Reference" "DZ1"
+			(at 44.45 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "7.5 or 8.2"
+			(at 44.45 33.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_SOD-123_Zener"
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, generic symbol, Alternate KiCAD Library"
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "422acb19-27f3-4655-8a38-b1616936d8f6")
+		)
+		(pin "1"
+			(uuid "2c87d906-08b2-4bf3-93d3-be924b9e06d8")
+		)
+		(instances
+			(project ""
+				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
+					(reference "DZ1")
 					(unit 1)
 				)
 			)
@@ -7097,7 +7414,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "258f2843-fab5-464b-bf50-378d290a7025")
-		(property "Reference" "TP10"
+		(property "Reference" "TP10_B1"
 			(at 252.476 102.87 90)
 			(effects
 				(font
@@ -7147,7 +7464,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP10")
+					(reference "TP10_B1")
 					(unit 1)
 				)
 			)
@@ -7840,7 +8157,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "48354fc2-f8be-4efd-a492-a281b7b3056e")
-		(property "Reference" "TP15"
+		(property "Reference" "TP15_VCC1"
 			(at 44.1324 24.13 0)
 			(effects
 				(font
@@ -7891,7 +8208,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP15")
+					(reference "TP15_VCC1")
 					(unit 1)
 				)
 			)
@@ -8168,7 +8485,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "537ed701-cb83-4fad-afb1-ec1cc53d9403")
-		(property "Reference" "TP9"
+		(property "Reference" "TP9_A1"
 			(at 249.8725 96.52 90)
 			(effects
 				(font
@@ -8218,7 +8535,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP9")
+					(reference "TP9_A1")
 					(unit 1)
 				)
 			)
@@ -8677,8 +8994,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61ff6d2a-943a-4918-b029-b9b6816a1076")
-		(property "Reference" "TP16"
-			(at 238.4425 21.59 90)
+		(property "Reference" "TP16_TX1"
+			(at 238.4425 20.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8686,12 +9003,11 @@
 			)
 		)
 		(property "Value" "~"
-			(at 239.7124 22.86 0)
+			(at 238.4425 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
@@ -8727,7 +9043,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP16")
+					(reference "TP16_TX1")
 					(unit 1)
 				)
 			)
@@ -10412,7 +10728,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Jack-DC"
+		(property "Value" "Max 12VDC IN"
 			(at 12.7 35.306 90)
 			(effects
 				(font
@@ -10472,7 +10788,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c8652ed9-d03a-4efd-b799-51d5defb01ca")
-		(property "Reference" "TP13"
+		(property "Reference" "TP13_3V3"
 			(at 87.63 25.0824 0)
 			(effects
 				(font
@@ -10523,7 +10839,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP13")
+					(reference "TP13_3V3")
 					(unit 1)
 				)
 			)
@@ -10802,7 +11118,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d583791d-3b58-4562-b679-423d0b1e3cb7")
-		(property "Reference" "TP14"
+		(property "Reference" "TP14_GND1"
 			(at 149.86 139.3824 0)
 			(effects
 				(font
@@ -10853,7 +11169,7 @@
 		(instances
 			(project "relay_to_rs485"
 				(path "/3a402a89-4541-4a12-afbc-bb2d79b5f06e"
-					(reference "TP14")
+					(reference "TP14_GND1")
 					(unit 1)
 				)
 			)
@@ -10877,7 +11193,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "100R"
 			(at 28.448 26.162 0)
 			(effects
 				(font
