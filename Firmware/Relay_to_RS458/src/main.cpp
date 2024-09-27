@@ -6,7 +6,7 @@
 ModbusMaster node;
 
 // Define the digital input pins for the input relays
-const int inputPins[] = {7, 8, 9, 10, 11};
+const int inputPins[] = {15, 17, 18, 19, 20};
 
 // Define the MODBUS coil addresses for the relays
 const int coilAddresses[] = {0x0000, 0x0001, 0x0002, 0x0003, 0x0004};
@@ -18,7 +18,7 @@ void setup()
   Serial.begin(115200);
 
   // Initialize serial connection for MODBUS
-  Serial1.begin(9600, SERIAL_8E1, 37, 39);
+  Serial1.begin(9600, SERIAL_8E1, 31, 35);
 
   // Initialize MODBUS
   node.begin(255,Serial1);
