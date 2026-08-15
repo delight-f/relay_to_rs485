@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  host-tests:
+    name: Host unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and run debounce tests
+        run: |
+          g++ -std=c++11 -Wall -Wextra -Werror -I relay_to_rs485 \
+            test/test_debounce.cpp -o /tmp/test_debounce
+          /tmp/test_debounce
+
+  firmware-build:
+    name: Firmware build (arduino-cli)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install arduino-cli
+        uses: arduino/setup-arduino-cli@v2
+
+      - name: Install ESP32 core
+        run: |
+          arduino-cli config add board_manager.additional_urls \
+            https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core update-index
+          arduino-cli core install esp32:esp32
+
+      - name: Install ModbusMaster
+        run: arduino-cli lib install ModbusMaster@2.0.1
+
+      - name: Compile firmware
+        run: arduino-cli compile --fqbn esp32:esp32:lolin_s2_mini relay_to_rs485

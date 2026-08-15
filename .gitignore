@@ -1,0 +1,24 @@
+# Arduino CLI build output
+build/
+
+# PlatformIO (legacy, removed — kept for anyone migrating)
+.pio/
+.pioenvs/
+.pioide/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# KiCad (hardware)
+Hardware/**/fp-info-cache
+Hardware/**/*.lck
+Hardware/**/relay_to_rs485-backups/
+Hardware/**/DRC.rpt
+Hardware/**/*.kicad_prl

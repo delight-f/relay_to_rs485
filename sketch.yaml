@@ -1,0 +1,19 @@
+# Arduino CLI sketch configuration.
+#
+# Reference: https://arduino.github.io/arduino-cli/latest/sketch-project-file/
+#
+# Build with:
+#   arduino-cli compile --fqbn esp32:esp32:lolin_s2_mini src
+#
+# The full build toolchain (sketch.yaml, Makefile, GitHub Actions) is
+# intentionally PlatformIO-free.
+
+default_profile: lolin_s2_mini
+profiles:
+  lolin_s2_mini:
+    notes: LOLIN S2 Mini (ESP32-S2), Arduino framework
+    fqbn: esp32:esp32:lolin_s2_mini
+    platforms:
+      - platform: esp32:esp32 (3.3.11)
+    libraries:
+      - ModbusMaster (2.0.1)
