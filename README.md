@@ -1,33 +1,62 @@
 # Relay to RS485
 
-Mirror a relay state with RS485 and the ModBus protocol.
+Mirror a relay state over RS485 using the Modbus protocol.
 
-This project was developed for use in amateur radio. A zero-voltage relay state is measured by an ESP32 input pin and this is reflected across using the ModBus protocol. It includes firmware and a PCB board for use.
+![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)
+![Platform: ESP32](https://img.shields.io/badge/platform-ESP32-blue.svg)
+![Framework: Arduino](https://img.shields.io/badge/framework-Arduino-00979D.svg)
 
-Use-cases include retrofitting into an existing, proprietary system to allow coil switching to move directors or change bands. Uses commonly available RS485-enabled relay boards available on Aliexpress/eBay and the like.
+## Overview
 
-It uses the ModBusMaster library and ESP32 glitch filters.
+Developed for amateur radio use. An ESP32 input pin measures a zero-voltage relay state and reflects it across an RS485 bus using Modbus. The repository includes firmware and a PCB design.
 
-## Variables
+**Use cases:** retrofitting into an existing proprietary system to allow coil switching — for example, moving antenna directors or changing bands. Designed to work with commonly available RS485 relay boards (AliExpress, eBay, etc.).
 
-This build uses five ESP32 input pins in the code but the board has eight input pins hardwired. This is to allow future addition of relays as this was designed for use with an 8-relay board.
+## Hardware
 
-## Built With
+The PCB has eight input pins hardwired; the current firmware uses five, leaving room for future relay expansion. It was designed around an 8-relay board.
 
-* [VS Code and PlatformIO) - Arduino framework
-  
+PCB design files are in [`/hardware`](./hardware).
+
+## Firmware
+
+- Framework: Arduino, built with [PlatformIO](https://platformio.org/)
+- Modbus: [ModbusMaster](https://github.com/4-20ma/ModbusMaster)
+- Debounced input handling and ESP32 glitch filters on all relay input pins
+
+### Prerequisites
+
+- [PlatformIO Core](https://platformio.org/install) or the PlatformIO VS Code extension
+- USB-to-serial access to the target ESP32 board
+
+### Build and flash
+
+```bash
+git clone https://github.com/de-light/relay-to-rs485.git
+cd relay-to-rs485
+pio run -t upload
+```
+
+### Configuration
+
+Pin assignments, Modbus slave ID, and channel count are set as named constants at the top of `src/main.cpp`. Adjust these to match your wiring before flashing.
+
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning.
+This project uses [SemVer](https://semver.org/).
 
-## Authors
+## Contributing
 
-* **de_light** - *Initial work* - [de_light]([https://github.com/de_light](https://github.com/delight-f))
+Issues and pull requests are welcome. Please open an issue to discuss significant changes before submitting a PR.
 
 ## License
 
-This project is licensed under the Creative Commons Attribution Share Alike 4.0 International License.
+Creative Commons Attribution-ShareAlike 4.0 International License. See [LICENSE](./LICENSE) for details.
 
 ## Acknowledgments
 
-* ModBusMaster library
+- [ModbusMaster](https://github.com/4-20ma/ModbusMaster) library
+
+## Authors
+
+- **de_light** — initial work
