@@ -43,6 +43,18 @@ class Debounce {
     return debounced_;
   }
 
+  /**
+   * Seed the initial state without a debounce delay.
+   *
+   * Use at startup: the first raw reading is trusted immediately, so a
+   * boot-time active input is not reported as a spurious change.
+   */
+  void reset(bool raw, uint32_t now_ms) {
+    last_raw_ = raw;
+    debounced_ = raw;
+    stable_since_ms_ = now_ms;
+  }
+
   /** Current debounced value without consuming a sample. */
   bool value() const { return debounced_; }
 

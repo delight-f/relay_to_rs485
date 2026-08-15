@@ -70,6 +70,23 @@ int main() {
     check("wrap accepted", d.update(true, 30) == true);
   }
 
+  // Boot priming: reset() trusts the initial reading immediately, so an
+  // input already active at power-on is not reported as a spurious change.
+  {
+    Debounce d(30);
+    d.reset(true, 0);
+    check("reset trusts active input", d.value() == true);
+    check("no spurious change at next poll", d.update(true, 50) == true);
+  }
+
+  // reset() to an inactive input behaves the same.
+  {
+    Debounce d(30);
+    d.reset(false, 0);
+    check("reset trusts inactive input", d.value() == false);
+    check("stable inactive", d.update(false, 50) == false);
+  }
+
   if (failures == 0) {
     std::printf("All tests passed.\n");
     return 0;

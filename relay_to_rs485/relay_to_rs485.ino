@@ -110,6 +110,7 @@ void setup() {
   // alive for the life of the program.
   for (size_t i = 0; i < kNumChannels; ++i) {
     const gpio_pin_glitch_filter_config_t filterConfig = {
+        .clk_src = GLITCH_FILTER_CLK_SRC_DEFAULT,
         .gpio_num = static_cast<gpio_num_t>(kInputPins[i]),
     };
 
@@ -129,10 +130,12 @@ void setup() {
   }
 
   // Prime state so the first loop iteration only sends coils that genuinely
-  // need setting, rather than assuming a stale default.
+  // need setting, rather than assuming a stale default. reset() trusts the
+  // boot reading immediately, so an input that is already active at power-on
+  // is not reported as a spurious change.
   for (size_t i = 0; i < kNumChannels; ++i) {
     const bool initial = readMappedInput(kInputPins[i]);
-    debouncers[i].update(initial, millis());
+    debouncers[i].reset(initial, millis());
 
     if (writeCoilWithRetry(kCoilAddresses[i], initial, i)) {
       lastSentState[i] = initial;
